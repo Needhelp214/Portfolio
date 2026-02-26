@@ -1,432 +1,365 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Sutatta Chantharangkoon (Mind)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skill</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero" class="section about-section">
-        <div class="container">
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
-            <h1>I'M Sutatta</h1>
-            <p class="subtitle">you can call me "Mind"</p>
-            <p class="welcome-text">Welcome to my Portfolio. This is what I would like to present.</p>
-            <a href="#about" class="cta-button">Explore My Portfolio</a>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="images/mymind.jpeg" alt="Profile" class="avatar-img">
+            <p class="sidebar-name">สุทัตตา จันทรางกูร</p>
+            <p class="sidebar-name">Sutatta Chantharangkoon</p>
+            <p class="sidebar-role">Cybersecurity & Data</p>
         </div>
-    </header>
+        <div class="divider"></div>
+        <nav id="nav">
+            <a href="#hero" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+            <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+            <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+            <a href="#activities"><i class="fas fa-tasks"></i> Activities</a>
+            <a href="#work"><i class="fas fa-project-diagram"></i> My Work</a>
+            <a href="#certificates"><i class="fas fa-certificate"></i> Certificates</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </aside>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/about.jpg" alt="About Me">
-                </div>
-                <div class="about-info">
-                    <div class="info-card">
-                        <h3>Personal Information</h3>
-                        <p><strong>Name:</strong> Sutatta Chantharangkoon</p>
-                        <p><strong>Nickname:</strong> Mind</p>
-                        <p><strong>Date of Birth:</strong> March 21, 2003</p>
-                        <p><strong>Age:</strong> 22 years</p>
-                        <p><strong>Strengths:</strong>เป็นคนที่ตั้งใจศึกษาเรียนรู้งาน พยายามเข้าใจอยู่เสมอ เข้ากับสังคมได้ง่าย เป็นคนที่ปรับตัวกับสถานการณ์อยุ่เสมอ</p>
-                        <p><strong>weakness:</strong>เป็นคนที่เข้าใจช้า พูดเก่ง เร็วแต่มักพูดรัวจนไม่ค่อยเข้าใจ แต่มักไม่กล้าพูด</p>
-                        <p><strong>Career Interests:</strong> Cybersecurity, Data Analysis</p>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>Hobbies</h3>
-                        <ul class="hobbies-list">
-                            <li><i class="fas fa-book"></i>Read original novels, fanfiction novels</li>
-                            <li><i class="fas fa-pencil-alt"></i> Sketching in both digital art and sketchbook formats</li>
-                            <li><i class="fas fa-music"></i> Listen to music and watch series</li>
-                        </ul>
-                    </div>
+    <main class="main-content">
+        <header id="hero" class="section hero">
+            <div class="container">
+                <p class="home-eyebrow">ยินดีต้อนรับสู่ Portfolio ของ สุทัตตา จันทรางกูร</p>
+                <h1 class="home-title">I'M <em>Sutatta</em><br>You can call me "Mind"</h1>
+                <p class="home-desc">สวัสดีค่ะ ชื่อฉันคือ สุทัตตา จันทรางกูร หรือชื่อเล่น มายด์ นะคะ
+                    เป็นนักศึกษาจากมหาวิทยาลัยกรุงเทพ ที่มีความสนใจแในด้าน Cybersecurity และ Digital Forensics
+                    ที่คือประสบการณ์และผลงานที่ได้ทำการรวบรวมมานำเสนอ</p>
+                <div class="btn-row">
+                    <a href="#about" class="btn btn-primary">สำรวจพอร์ตโฟลิโอ</a>
+                    <a href="#contact" class="btn btn-outline">ติดต่อฉัน</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Education Section -->
-    <section id="education" class="section education-section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="edu-icon">
-                        <i class="fas fa-school"></i>
-                    </div>
-                    <h3>high school</h3>
-                    <p class="institute">Phothisamphanphitthayakhan School</p>
-                    <p class="gpa">GPA: 3.26</p>
-                </div>
-                <div class="education-card">
-                    <div class="edu-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3>University</h3>
-                    <p class="institute">Bangkok University</p>
-                    <p class="duration">2565 - currently</p>
-                    <p class="gpa">GPA: 3.16</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience-section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2024</div>
-                        <div class="timeline-content">
-                            <h3>Women Thailand Cyber Top Talent 2024</h3>
-                            <p>เข้าร่วมการแข่งขันด้านความปลอดภัยไซเบอร์สำหรับผู้หญิง</p>
+        <section id="about" class="section">
+            <div class="container">
+                <p class="sec-label">Get to know me</p>
+                <h2 class="sec-title">About Me</h2>
+                <div class="sec-rule"></div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p><strong>ชื่อ-นามสกุล:</strong> สุทัตตา จันทรางกูร (มายด์)</p>
+                        <p><strong>วันเกิด:</strong> 21 มีนาคม 2546 (อายุ 22 ปี)</p>
+                        <p><strong>จุดแข็งและจุดอ่อน:</strong>
+                            เป็นคนที่เรียนรู้งานช้าแต่เป็นคนพยายามอยู่เสมอเพื่อพัฒนาตัวเองและทำให้งานที่รับผิดชอบให้ดียิ่งขึ้น
+                            และเป็นคนที่พูดเก่งซึ่งสามารถทำให้ปรับตัวเข้ากับสถานการณ์ใหม่ๆหรือสังคมใหม่ๆได้ง่าย </p>
+                        <p><strong>ความสนใจ:</strong> Cybersecurity, Digital Forensics ,GRC Auditor</p>
+                        <div class="hobbies">
+                            <h3>งานอดิเรก</h3>
+                            <ul class="hobbies-list">
+                                <li><i class="fas fa-book"></i> อ่านนิยาย original และ fanfiction</li>
+                                <li><i class="fas fa-pencil-alt"></i> วาดรูป Sketch ทั้งแบบ Digital และลงสมุด</li>
+                                <li><i class="fas fa-music"></i> ฟังเพลงและดูซีรีส์
+                                    หรือฟังพอดแคสต์แนวเล่าเรื่องคดีอาชญากรรม (True Crime) และเรื่องราวลึกลับ</li>
+                            </ul>
                         </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2025</div>
-                        <div class="timeline-content">
-                            <h3>CTF Virtual Training</h3>
-                            <p>ฝึกอบรมการแข่งขัน Capture The Flag ด้านความปลอดภัยไซเบอร์</p>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-language"></i>
-                        <h3>ภาษา</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>ไทย</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Programming</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>SQL</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-chart-bar"></i>
-                        <h3>Data Visualization</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>Power BI</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-file-alt"></i>
-                        <h3>Productivity Tools</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>Microsoft Word</li>
-                        <li>Microsoft PowerPoint</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-paint-brush"></i>
-                        <h3>Design Tools</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>Figma</li>
-                        <li>Draw.io</li>
-                        <li>Canva</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Cybersecurity</h3>
-                    </div>
-                    <ul class="skill-list">
-                        <li>Penetration Testing Tools : kali linux</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Activities Section -->
-    <section id="activities" class="section activities-section">
-        <div class="container">
-            <h2 class="section-title"> Activities</h2>
-            <div class="gallery-container">
-                <div class="gallery-item">
-                    <video controls class="activity-media">
-                        <source src="images/activities/activity-video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="activity-caption">
-                        <h3>กิจกรรมอบรมจิตอาสา</h3>
-                        <p>เข้าร่วมกิจกรรมจิตอาสาทาสีเครื่องเล่นในโรงเรียน</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="images/activities/activitie_BUDC.jpeg" alt="Activity 1" class="activity-media">
-                    <div class="activity-caption">
-                        <h3>งานสัมมนา BUDC</h3>
-                        <p>เข้าร่วมงานสัมมนาของชมรมกระจายเสียง</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="images/activities/activitie_hotel.jpg" alt="Activity 2" class="activity-media">
-                    <div class="activity-caption">
-                        <h3>งานพาร์ทไทม์</h3>
-                        <p>ทำงานพาร์ทช่องระหว่างปิดเทอมมหาวิทยาลัย</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="images/activities/activitie_OPH1.jpg" alt="Activity 3" class="activity-media">
-                    <div class="activity-caption">
-                        <h3>Open House 2022</h3>
-                        <p>เข้าร่วมเป็น Staff ในกิจกรรมงาน Open House</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="images/activities/activitie_OPH2.jpg" alt="Activity 4" class="activity-media">
-                    <div class="activity-caption">
-                        <h3>Open House 2022</h3>
-                        <p>เข้าร่วมเป็น Staff ในกิจกรรมงาน Open House</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Section -->
- <section id="certificates" class="section certificates-section">
-    <div class="container">
-        <h2 class="section-title">Certificates</h2>
-        <div class="certificates-grid">
-            <div class="certificate-card featured">
-                <div class="certificate-badge">Featured</div>
-                <div class="certificate-image">
-                    <div class="pdf-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <img src="images/NCSA_page-0001.jpg" alt="PDF Thumbnail" class="pdf-thumbnail">
-                </div>
-                <div class="certificate-info">
-                    <h3>Women CERT NCSA Boot Camp 2024</h3>
-                    <p>ฝึกอบรมด้านความปลอดภัยไซเบอร์สำหรับผู้หญิง</p>
-                    <div class="certificate-actions">
-                        <a href="pdf/(SENIOR) Women CERT NCSA Boot Camp 2024 รุ่น 2.pdf" target="_blank" class="view-btn">
-                            <i class="fas fa-eye"></i> View Certificate
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="certificate-card featured">
-                <div class="certificate-badge">Featured</div>
-                <div class="certificate-image">
-                    <div class="pdf-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <img src="images/coursera_page-0001.jpg" alt="PDF Thumbnail" class="pdf-thumbnail">
-                </div>
-                <div class="certificate-info">
-                    <h3>Coursera</h3>
-                    <p>อบรมออนไลน์ในการสร้าง Chatbot ด้วย Python และ ChatGPT</p>
-                    <div class="certificate-actions">
-                        <a href="pdf/coursera.pdf" target="_blank" class="view-btn">
-                            <i class="fas fa-eye"></i> View Certificate
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="certificate-card featured">
-                <div class="certificate-badge">Featured</div>
-                <div class="certificate-image">
-                    <div class="pdf-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <img src="images/mooc_page-0001.jpg" alt="PDF Thumbnail" class="pdf-thumbnail">
-                </div>
-                <div class="certificate-info">
-                    <h3>NCSA Mooc Cyber-Learning</h3>
-                    <p>ผ่านอบรม e-Learning : Basic Cybersecurity</p>
-                    <div class="certificate-actions">
-                        <a href="pdf/mooc.pdf" target="_blank" class="view-btn">
-                            <i class="fas fa-eye"></i> View Certificate
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="certificate-card featured">
-                <div class="certificate-badge">Featured</div>
-                <div class="certificate-image">
-                    <div class="pdf-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <img src="images/NCSA_page-0001.jpg" alt="PDF Thumbnail" class="pdf-thumbnail">
-                </div>
-                <div class="certificate-info">
-                    <h3>NCSA e-Learning</h3>
-                    <p>ผ่านอบรม e-Learning : Cybersecurity professional courses</p>
-                    <div class="certificate-actions">
-                        <a href="pdf/NCSA.pdf" target="_blank" class="view-btn">
-                            <i class="fas fa-eye"></i> View Certificate
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PDF Viewer Modal -->
-<div id="pdfModal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <iframe id="pdfViewer" src="" frameborder="0"></iframe>
-    </div>
-</div>   
-<!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>sutatta.contact@gmail.com</p>
-                            <p>sutatta2101t@gmail.com</p>
+                        <div class="stats">
+                            <div class="stat-card">
+                                <div class="stat-num">3.16</div>
+                                <div class="stat-lbl">GPA (University)</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-num">2024</div>
+                                <div class="stat-lbl">Cyber Talent Participant</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>092-2534287</p>
+                    <div class="about-gallery">
+                        <img src="images/about.jpg" alt="About 1" class="gallery-img">
+                        <img src="images/about2.jpeg" alt="About 2" class="gallery-img">
+                        <img src="images/about3.jpeg" alt="About 3" class="gallery-img">
+                        <img src="images/about4.jpeg" alt="About 4" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <p class="sec-label">Learning Path</p>
+                <h2 class="sec-title">Education</h2>
+                <div class="sec-rule"></div>
+                <div class="grid-2">
+                    <div class="pcard">
+                        <div class="pbody">
+                            <span class="badge">มัธยมศึกษา</span>
+                            <h3 class="ptitle">โรงเรียนโพธิสัมพันธ์พิทยาคาร</h3>
+                            <p class="pdesc">เกรดเฉลี่ยสะสม (GPA): 3.26</p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-instagram"></i>
-                        <div>
-                            <h4>Instagram</h4>
-                            <p>mxmjcroya_</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-facebook"></i>
-                        <div>
-                            <h4>Facebook</h4>
-                            <p>Sutatta Chantharangkoon</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-line"></i>
-                        <div>
-                            <h4>Line</h4>
-                            <p>@m659817m</p>
+                    <div class="pcard">
+                        <div class="pbody">
+                            <span class="badge">มหาวิทยาลัย</span>
+                            <h3 class="ptitle">มหาวิทยาลัยกรุงเทพ</h3>
+                            <p class="pdesc">ปี 2565 - ปัจจุบัน | เกรดเฉลี่ยสะสม (GPA): 3.16</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- PDF Viewer Modal -->
-    <div id="pdfModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <iframe id="pdfViewer" src="" frameborder="0"></iframe>
-        </div>
-    </div>
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <p class="sec-label">Milestones</p>
+                        <h2 class="sec-title">Experience</h2>
+                        <div class="sec-rule"></div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h4>2024: Women Thailand Cyber Top Talent</h4>
+                                <p>การแข่งขันด้านความปลอดภัยไซเบอร์ระดับประเทศสำหรับผู้หญิง</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4>2025: CTF Virtual Training</h4>
+                                <p>การฝึกอบรมเทคนิคการแข่งขัน Capture The Flag</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="skills">
+                        <p class="sec-label">Proficiency</p>
+                        <h2 class="sec-title">Skills</h2>
+                        <div class="sec-rule"></div>
+                        <div class="tools-grid">
+                            <div class="tool">Python</div>
+                            <div class="tool">SQLite</div>
+                            <div class="tool">MySQL</div>
+                            <div class="tool">Kali Linux</div>
+                            <div class="tool">Figma</div>
+                            <div class="tool">Canva</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <p>Sutatta Chantharangkoon</p>
-                    <p>Portfolio</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-line"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <section id="activities" class="section">
+            <div class="container">
+                <p class="sec-label">Life & Work</p>
+                <h2 class="sec-title">Activities</h2>
+                <div class="sec-rule"></div>
+
+                <div class="grid-3">
+                    <div class="activity-card no-download">
+                        <div class="pthumb-activity">
+                            <video controls class="activity-media" controlsList="nodownload">
+                                <source src="images/activities/activity-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="pbody">
+                            <h3 class="ptitle">กิจกรรมอบรมจิตอาสา</h3>
+                            <p class="pdesc">เข้าร่วมกิจกรรมจิตอาสาทาสีเครื่องเล่นในโรงเรียน</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-card no-download">
+                        <div class="pthumb-activity">
+                            <img src="images/activities/activitie_BUDC.jpeg" alt="BUDC" class="activity-img">
+                        </div>
+                        <div class="pbody">
+                            <h3 class="ptitle">งานสัมมนา BUDC</h3>
+                            <p class="pdesc">เข้าร่วมงานสัมมนาของชมรมกระจายเสียง</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-card no-download">
+                        <div class="pthumb-activity">
+                            <img src="images/activities/activitie_hotel.jpg" alt="Hotel" class="activity-img">
+                        </div>
+                        <div class="pbody">
+                            <h3 class="ptitle">งานพาร์ทไทม์</h3>
+                            <p class="pdesc">ทำงานพาร์ทไทม์ช่วงระหว่างปิดเทอมมหาวิทยาลัย</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-card no-download">
+                        <div class="pthumb-activity">
+                            <img src="images/activities/activitie_OPH1.jpg" alt="BUDC" class="activity-img">
+                        </div>
+                        <div class="pbody">
+                            <h3 class="ptitle">Open House 2022</h3>
+                            <p class="pdesc">เข้าร่วมเป็น Staff ในกิจกรรมงาน Open House</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-card no-download">
+                        <div class="pthumb-activity">
+                            <img src="images/activities/activitie_OPH2.jpg" alt="Hotel" class="activity-img">
+                        </div>
+                        <div class="pbody">
+                            <h3 class="ptitle">Open House 2022</h3>
+                            <p class="pdesc">ข้าร่วมเป็น Staff ในกิจกรรมงาน Open House</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-card no-download">
+                        <div class="pthumb-activity">
+                            <img src="images/activities/BU cyber.JPG" alt="Hotel" class="activity-img">
+                        </div>
+                        <div class="pbody">
+                            <h3 class="ptitle"> BU Cyber Fortress Challenge & Career Expo 2026</h3>
+                            <p class="pdesc">เข้าร่วมโชว์ผลงาน Alertmalware Website ที่ร่วมสร้างกับทีมในงาน BU Cyber
+                                Fortress Challenge & Career Expo 2026 </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sutatta Chantharangkoon (Mind). All rights reserved.</p>
+        </section>
+
+        <section id="work" class="section">
+            <div class="container">
+                <p class="sec-label">My Projects</p>
+                <h2 class="sec-title">My Work</h2>
+                <div class="sec-rule"></div>
+                <div class="work-container">
+                    <div class="work-card no-download">
+                        <div class="work-img-box">
+                            <img src="images/activities/My_work-petowner_assistant.jpg" alt="Petowner">
+                        </div>
+                        <div class="work-info">
+                            <div class="work-badge">UI/UX Design</div>
+                            <h3 class="work-name">Petowner Assistant</h3>
+                        <p class="work-desc">
+                            <strong>Project Scope:</strong> โปรเจกต์รายวิชา แอปพลิเคชันสำหรับคลินิกรักษาสัตว์ <br>
+                            <strong>Role:</strong> ออกแบบ UI/UX สำหรับเจ้าของสัตว์เลี้ยง เพื่อใช้ติดตามอาการและข้อมูลสุขภาพของสัตว์เลี้ยงรวมถึงการเขียนบันทึกอาการของสัตว์เลี้ยงก่อนหรือหลังการรักษา <br>
+                            <strong>Programming Language:</strong> HTML, JS, CSS
+                        </p>
+                        <div class="work-tech">
+                            <span>Figma</span>
+                            <span>Canva</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="work-card no-download">
+                        <div class="work-img-box">
+                            <img src="images/activities/My_work-ApplicationPhishing.jpg" alt="Phishing">
+                        </div>
+                        <div class="work-info">
+                            <div class="work-badge">Cybersecurity</div>
+                            <h3 class="work-name">SMS/URL Phishing Detector</h3>
+                        <p class="work-desc">
+                            <strong>Project Scope:</strong>โปรเจกต์รายวิชา แอปพลิเคชันตรวจสอบ SMS/URL อันตราย<br>
+                            <strong>Role:</strong> ออกแบบส่วนติดต่อผู้ใช้ UI/UX และการพัฒนาระบบปัญญาประดิษฐ์ <br>
+                            <strong>Programming Language:</strong> HTML, JS, CSS ,Python
+                        </p>
+                        <div class="work-tech">
+                            <span>Figma</span>
+                            <span>Canva</span>
+                            <span>MLOps</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="work-card no-download">
+                        <div class="work-img-box">
+                            <img src="images/activities/My_work-Alertmalware Website.jpg" alt="Phishing">
+                        </div>
+                        <div class="work-info">
+                            <div class="work-badge">Cybersecurity</div>
+                            <h3 class="work-name">Alertmalware Admin Website</h3>
+                            <p class="work-desc">
+                            <strong>Project Scope:</strong>โปรเจกต์รายวิชา เว็บไซต์สำหรับจัดการระบบเนื้อหาเกี่ยวกับมัลแวร์<br>
+                            <strong>Role:</strong> รออกแบบส่วนติดต่อผู้ใช้ (UI/UX) สำหรับระบบจัดการ (Admin Panel) เพื่อให้ผู้ดูแลระบบสามารถจัดการเนื้อหาเกี่ยวกับมัลแวร์<br>
+                            <strong>Programming Language:</strong> HTML, JS, CSS ,Python
+                        </p>
+                        <div class="work-tech">
+                            <span>Figma</span>
+                            <span>Canva</span>
+                            <span>Visual Studio Code</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <section id="certificates" class="section">
+            <div class="container">
+                <p class="sec-label">Achievements</p>
+                <h2 class="sec-title">Certificates</h2>
+                <div class="sec-rule"></div>
+                <div class="grid-2">
+                    <div class="pcard no-download">
+                        <div class="pthumb-cert">
+                            <embed
+                                src="pdf/(SENIOR) Women CERT NCSA Boot Camp 2024 รุ่น 2.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                                type="application/pdf" width="100%" class="cert-pdf">
+                        </div>
+                        <div class="pbody">
+                            <div class="cert-content">
+                                <h3 class="ptitle">Women CERT NCSA Boot Camp</h3>
+                                <p class="pdesc">ฝึกอบรมด้านความปลอดภัยไซเบอร์ 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pcard no-download">
+                        <div class="pthumb-cert">
+                            <embed src="pdf/coursera.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"
+                                width="100%" class="cert-pdf">
+                        </div>
+                        <div class="pbody">
+                            <div class="cert-content">
+                                <h3 class="ptitle">Coursera: Python Chatbot</h3>
+                                <p class="pdesc">การสร้าง Chatbot ด้วย Python และ ChatGPT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <p class="sec-label">Say hello</p>
+                <h2 class="sec-title">Contact</h2>
+                <div class="sec-rule"></div>
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <div class="contact-links">
+                            <a href="#" class="clink">
+                                <div class="cicon ci3"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <div class="clink-meta">Phone</div>0922534287
+                                </div>
+                            </a>
+                            <a href="mailto:sutatta.contact@gmail.com" class="clink">
+                                <div class="cicon ci1"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <div class="clink-meta">Email</div>sutatta.contact@gmail.com
+                                </div>
+                            </a>
+                            <a href="#" class="clink">
+                                <div class="cicon ci2"><i class="fab fa-line"></i></div>
+                                <div>
+                                    <div class="clink-meta">Line</div>@m659817m
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
