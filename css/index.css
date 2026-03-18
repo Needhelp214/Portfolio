@@ -293,11 +293,22 @@ input, textarea {
     z-index: 10;
 }
 
-.cert-pdf {
-    width: 100%;
-    height: 100%;
-    border: none;
+/* บังคับให้รูปภาพในกรอบใบเซอร์แสดงผลเต็มพื้นที่ */
+.cert-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain; /* ใช้ contain เพื่อให้เห็นใบเซอร์ครบทั้งใบ ไม่โดนซูม */
     display: block;
+    background-color: #fff; /* ใส่พื้นหลังขาวกันขอบดำ */
+}
+
+/* ปรับสัดส่วนกรอบให้คงที่ */
+.pthumb-cert {
+    width: 100%;
+    aspect-ratio: 1.4 / 1; 
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
 }
 
 /* จัดการให้บรรทัดข้อความในทุก Card สูงเท่ากัน */
