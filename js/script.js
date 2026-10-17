@@ -112,4 +112,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
     }
+    // 4. ระบบคำนวณอายุอัตโนมัติจากวันเกิด
+    const ageElement = document.getElementById('user-age');
+    if (ageElement) {
+        // วันเกิด: 21 มีนาคม 2546 (ค.ศ. 2003 / เดือนมีนาคม คือ index 2)
+        const birthDate = new Date(2003, 2, 21);
+        const today = new Date();
+        
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+        
+        // หากยังไม่ถึงเดือนเกิด หรืออยู่ในเดือนเกิดแต่วันที่ยังไม่ถึง ให้ลดอายุลง 1 ปี
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        
+        ageElement.textContent = age;
+    }
 });
