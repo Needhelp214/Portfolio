@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Sutatta – Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600&family=Prompt:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN (เพิ่มบรรทัดนี้กลับเข้ามา) -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { paper: '#F9F8F6', card: '#FDFBF7', ink: '#2B2622', muted: '#6B6258', line: '#E6E0D4', accent: '#2F4A6B' },
+                    fontFamily: {
+                        serif: ['Newsreader', 'Georgia', 'serif'],
+                        sans: ['Figtree', 'Prompt', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div
+            class="mx-auto max-w-6xl px-4 sm:px-6 py-2 flex flex-col md:flex-row md:items-center md:justify-between gap-1">
+            <a href="#home" class="font-serif text-xl font-semibold text-ink no-underline">Sutatta Chantharangkoon</a>
+            <nav class="nav -mx-1 md:mx-0" aria-label="Main">
+                <a href="#home" data-nav="home">Home</a>
+                <a href="#about" data-nav="about">About Me</a>
+                <a href="#education" data-nav="education">Education</a>
+                <a href="#experiences" data-nav="experiences">Experiences</a>
+                <a href="#activities" data-nav="activities">Activities</a>
+                <a href="#work" data-nav="work">My Work</a>
+                <a href="#certificates" data-nav="certificates">Certificates</a>
+                <a href="#contact" data-nav="contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="book">
+        <main class="mx-auto max-w-6xl px-3 sm:px-6 py-5 sm:py-8">
+            <div id="stage">
+
+                <!-- HOME -->
+                <section class="page card active" data-page="home">
+                    <div class="grid md:grid-cols-[1.25fr_1fr] gap-8 md:gap-10 items-center my-auto">
+                        <div>
+                            <p class="text-sm font-medium tracking-wider uppercase text-accent">Business Analyst
+                                Portfolio</p>
+                            <h1
+                                class="font-serif font-medium text-3xl sm:text-5xl leading-tight tracking-tight mt-2 text-ink">
+                                ดิฉัน สุทัตตา จันทรางกูร
+                            </h1>
+                            <p class="mt-1 text-base sm:text-lg font-sans text-muted">
+                                ชื่อเล่น มายด์ (Mind)
+                            </p>
+
+                            <p class="lead mt-5 text-sm sm:text-base leading-relaxed text-muted">
+                                รวบรวมทักษะและการเรียนรู้จากโปรเจกต์ในมหาวิทยาลัย ทั้งการวิเคราะห์ระบบ การเก็บ
+                                Requirements การออกแบบ UI/UX Flow บน Figma และการพัฒนาผลงานไอที
+                                มุ่งมั่นนำทักษะการประสานงานและการทำงานร่วมกันเป็นทีมมาปรับใช้เพื่อสร้างประโยชน์ให้องค์กร
+                            </p>
+
+                            <div class="mt-6 flex flex-wrap gap-3">
+                                <a class="btn" href="#work">View my work</a>
+                                <a class="btn ghost" href="#contact">Get in touch</a>
+                            </div>
+                        </div>
+
+                        <div class="polaroid mx-auto w-52 sm:w-64">
+                            <!-- ใส่ URL รูปโปรไฟล์หน้าแรกตรงนี้ -->
+                            <div class="ph ph-user aspect-[4/5]"
+                                style="background-image: url('<!-- ใส่ URL รูปโปรไฟล์ -->'); background-size: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ABOUT ME -->
+                <section class="page card" data-page="about">
+                    <h2 class="h2">About Me</h2>
+                    <div class="rule"></div>
+                    <div class="grid md:grid-cols-[1fr_1.6fr] gap-8">
+                        <!-- Gallery รูปถ่ายส่วนตัว 4 รูป -->
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="aspect-square bg-cover bg-center rounded-lg border border-line"
+                                style="background-image: url('<!-- ใส่ URL รูปที่ 1 -->');"></div>
+                            <div class="aspect-square bg-cover bg-center rounded-lg border border-line"
+                                style="background-image: url('<!-- ใส่ URL รูปที่ 2 -->');"></div>
+                            <div class="aspect-square bg-cover bg-center rounded-lg border border-line"
+                                style="background-image: url('<!-- ใส่ URL รูปที่ 3 -->');"></div>
+                            <div class="aspect-square bg-cover bg-center rounded-lg border border-line"
+                                style="background-image: url('<!-- ใส่ URL รูปที่ 4 -->');"></div>
+                        </div>
+                        <div>
+                            <p class="lead font-semibold">Academic Projects & Skill Development</p>
+                            <p class="lead mt-2">ผ่านการทำโปรเจกต์ในมหาวิทยาลัยด้านการรวบรวม Requirements
+                                วิเคราะห์ลำดับขั้นตอนการทำงาน และออกแบบ User Flow / Wireframe บน Figma
+                                เพื่อเปลี่ยนโจทย์ทางธุรกิจให้เป็นดิจิทัลโซลูชัน พร้อมประยุกต์ใช้พื้นฐานความเข้าใจด้าน IT
+                                และ Cyber Security ในการประสานงานระหว่างฝั่ง Business และทีม Developer
+                                อย่างมีประสิทธิภาพ</p>
+                            <dl class="mt-6 grid grid-cols-[auto_1fr] gap-x-6 gap-y-2 text-sm">
+                                <dt class="text-muted">Location</dt>
+                                <dd>Thailand</dd>
+                                <dt class="text-muted">Email</dt>
+                                <dd>Sutatta2101@gmail.com</dd>
+                                <dt class="text-muted">Languages</dt>
+                                <dd>Thai : Native, English : beginner</dd>
+                            </dl>
+                            <div class="mt-6 flex flex-wrap gap-2" id="skills">
+                                <!-- ดึงข้อมูลทักษะจากในภาพมาใส่ -->
+                                <span class="tag">Time Management</span>
+                                <span class="tag">Problem Solving</span>
+                                <span class="tag">Teamwork</span>
+                                <span class="tag">Adaptability</span>
+                                <span class="tag">Communication</span>
+                                <span class="tag">Creativity</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EDUCATION -->
+                <section class="page card" data-page="education">
+                    <h2 class="h2">Education</h2>
+                    <div class="rule"></div>
+                    <ul class="tl max-w-2xl" id="edu">
+                        <!-- รายการที่ 1: มหาวิทยาลัย -->
+                        <li class="tl-item">
+                            <p class="text-sm font-medium text-accent">2565 - 2569</p>
+                            <h3 class="font-serif text-xl mt-1 text-ink">มหาวิทยาลัยกรุงเทพ | Bangkok University</h3>
+                            <p class="text-sm text-muted mt-1">ปริญญาตรี (Bachelor's Degree)</p>
+                            <p class="text-sm text-muted mt-1">เกรดเฉลี่ยสะสม (GPA): 3.18</p>
+                        </li>
+
+                        <!-- รายการที่ 2: โรงเรียนมัธยม -->
+                        <li class="tl-item">
+                            <p class="text-sm font-medium text-accent">2562 - 2565</p>
+                            <h3 class="font-serif text-xl mt-1 text-ink">โรงเรียนโพธิสัมพันธ์พิทยาคาร |
+                                Phothisamphanphitthayakhan School</h3>
+                            <p class="text-sm text-muted mt-1">มัธยมศึกษาตอนปลาย (High School)</p>
+                            <p class="text-sm text-muted mt-1">เกรดเฉลี่ยสะสม (GPA): 3.26</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- EXPERIENCES -->
+                <section class="page card" data-page="experiences">
+                    <h2 class="h2">Experiences</h2>
+                    <div class="rule"></div>
+                    <ul class="tl max-w-2xl" id="exp">
+                        <li class="tl-item">
+                            <p class="text-sm text-accent">25 พ.ค. 2569 - 10 ก.ย. 2569</p>
+                            <h3 class="font-serif text-xl mt-1">บริษัทที่ฝึกงาน : บริษัท ไรซ์ คอนซัลติ้ง จำกัด - GRC
+                                Consultant (Intern)</h3>
+                            <p class="text-sm text-muted mt-1 max-w-prose">• ตรวจสอบความถูกต้องของเนื้อหา รูปแบบ
+                                และการจัดเรียงลำดับหน้าเอกสารใน Microsoft Word</p>
+                            <p class="text-sm text-muted mt-1 max-w-prose">• บริหารจัดการและจัดเรียงข้อมูลตารางจาก
+                                Microsoft Excel ให้เป็นระเบียบตามมาตรฐาน</p>
+                            <p class="text-sm text-muted mt-1 max-w-prose">• แปลงข้อมูลสรุปกระบวนการทำงานให้อยู่ในรูปแบบ
+                                Flowchart เพื่อเพิ่มความชัดเจนในการทำงาน</p>
+                            <p class="text-sm text-muted mt-1 max-w-prose">•
+                                เข้าร่วมการประชุมและจัดทำสรุปสาระสำคัญจากการประชุม</p>
+                        </li>
+                        <li class="tl-item">
+                            <p class="text-sm text-accent">2567 - 2568</p>
+                            <h3 class="font-serif text-xl mt-1">เข้าร่วมการแข่งขันด้านความมั่นคงปลอดภัยไซเบอร์</h3>
+                            <h3>(Cybersecurity CTF Competitions)</h3>
+                            <p class="text-sm text-muted mt-1 max-w-prose">• Women Thailand Cyber Top Talent 2024
+                                (Senior): เข้าร่วมการแข่งขันทดสอบทักษะไซเบอร์ระดับประเทศสำหรับผู้หญิง
+                                จัดโดย สกมช. (NCSA) ร่วมกับ Huawei </p>
+                            <p class="text-sm text-muted mt-1 max-w-prose">• Thailand Cyber Top Talent 2025 (Senior):
+                                เข้าร่วมการแข่งขันทดสอบทักษะทางไซเบอร์ Capture The Flag (CTF) ระดับประเทศ
+                                จัดโดย สกมช.</p>
+
+                        </li>
+                    </ul>
+                </section>
+
+               <!-- ACTIVITIES -->
+                <section class="page card" data-page="activities">
+                    <h2 class="h2">Activities</h2>
+                    <div class="rule"></div>
+                    <div class="grid sm:grid-cols-2 gap-5" id="act">
+                        
+                        <!-- Activity 1 -->
+                        <div class="tile flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                            <video class="shrink-0 rounded-lg w-full sm:w-36 h-24 object-cover bg-black border border-line" autoplay loop muted playsinline>
+                                <source src="../images/activities/activity-video.mp4" type="video/mp4">
+                                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                            </video>
+                            <div>
+                                <h3 class="font-serif text-lg font-medium text-ink">กิจกรรมอบรมจิตอาสา</h3>
+                                <p class="text-sm text-muted mt-1">เข้าร่วมกิจกรรมจิตอาสาทาสีเครื่องเล่นในโรงเรียน</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 2 -->
+                        <div class="tile flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                            <div class="shrink-0 rounded-lg w-full sm:w-36 h-24 bg-cover bg-center border border-line"
+                                style="background-image: url('../images/activities/activitie_BUDC.jpeg');"></div>
+                            <div>
+                                <h3 class="font-serif text-lg font-medium text-ink">งานสัมมนา BUDC</h3>
+                                <p class="text-sm text-muted mt-1">เข้าร่วมงานสัมมนาของชมรมกระจายเสียง</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 3 -->
+                        <div class="tile flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                            <div class="shrink-0 rounded-lg w-full sm:w-36 h-24 bg-cover bg-center border border-line"
+                                style="background-image: url('../images/activities/activitie_hotel.jpg');"></div>
+                            <div>
+                                <h3 class="font-serif text-lg font-medium text-ink">งานพาร์ทไทม์</h3>
+                                <p class="text-sm text-muted mt-1">ทำงานพาร์ทไทม์ช่วงระหว่างปิดเทอมมหาวิทยาลัย (งานเซเว่น 2 เดือน, งานโรงแรม 1 เดือน)</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 4 -->
+                        <div class="tile flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                            <div class="shrink-0 rounded-lg w-full sm:w-36 h-24 bg-cover bg-center border border-line"
+                                style="background-image: url('../images/activities/activitie_OPH2.jpg');"></div>
+                            <div>
+                                <h3 class="font-serif text-lg font-medium text-ink">Open House 2022</h3>
+                                <p class="text-sm text-muted mt-1">เข้าร่วมเป็น Staff ในกิจกรรมงาน Open House</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 5 -->
+                        <div class="tile flex flex-col sm:flex-row gap-4 items-start sm:items-center sm:col-span-2">
+                            <div class="shrink-0 rounded-lg w-full sm:w-44 h-28 bg-cover bg-center border border-line"
+                                style="background-image: url('../images/activities/BU cyber.JPG');"></div>
+                            <div>
+                                <h3 class="font-serif text-lg font-medium text-ink">BU Cyber Fortress Challenge & Career Expo 2026</h3>
+                                <p class="text-sm text-muted mt-1">เข้าร่วมโชว์ผลงาน Alertmalware Website ที่ร่วมสร้างกับทีมในงาน BU Cyber Fortress Challenge & Career Expo 2026</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- MY WORK -->
+                <section class="page card" data-page="work">
+                    <h2 class="h2">My Work</h2>
+                    <div class="rule"></div>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="proj">
+
+                        <!-- Project 1 -->
+                        <article class="tile proj flex flex-col justify-between h-full">
+                            <div>
+                                <div class="rounded-lg aspect-video bg-cover bg-center border border-line/50 shadow-sm overflow-hidden" 
+                                    style="background-image: url('../images/activities/My_work-petowner_assistant.jpg');"></div>
+                                <h3 class="font-serif text-xl font-medium mt-3 px-1 text-ink">pethouse_assistant</h3>
+                                <p class="text-xs text-accent font-medium px-1 mt-0.5">โปรเจกต์รายวิชา แอปพลิเคชันสำหรับคลินิกรักษาสัตว์</p>
+                                
+                                <div class="mt-3 px-1 space-y-1.5 text-xs text-muted leading-relaxed">
+                                    <p><strong class="text-ink font-medium">Role:</strong> ออกแบบ UI/UX สำหรับเจ้าของสัตว์เลี้ยง เพื่อใช้ติดตามอาการและข้อมูลสุขภาพของสัตว์เลี้ยงรวมถึงการเขียนบันทึกอาการของสัตว์เลี้ยงก่อนหรือหลังการรักษา</p>
+                                    <p><strong class="text-ink font-medium">Deliverables:</strong> Wireframe, User Flow & Interactive Prototype</p>
+                                    <p><strong class="text-ink font-medium">Programming Languages:</strong> HTML, JS, CSS</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-3 border-t border-line/60 px-1 flex flex-wrap gap-1.5">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">HTML/CSS/JS</span>
+                                <span class="tag">Visual Studio Code</span>
+                            </div>
+                        </article>
+
+                        <!-- Project 2 -->
+                        <article class="tile proj flex flex-col justify-between h-full">
+                            <div>
+                                <div class="rounded-lg aspect-video bg-cover bg-center border border-line/50 shadow-sm overflow-hidden" 
+                                    style="background-image: url('../images/activities/My_work-ApplicationPhishing.jpg');"></div>
+                                <h3 class="font-serif text-xl font-medium mt-3 px-1 text-ink">SMS/URL Phishing Detector</h3>
+                                <p class="text-xs text-accent font-medium px-1 mt-0.5">Academic Project · SMS/URL Phishing Detection System</p>
+                                
+                                <div class="mt-3 px-1 space-y-1.5 text-xs text-muted leading-relaxed">
+                                    <p><strong class="text-ink font-medium">Role:</strong> ออกแบบ UI/UX และพัฒนาโมเดล AI โดยนำ Dataset จาก Kaggle มาฝึกฝนระบบเพื่อวิเคราะห์และตรวจจับข้อความ/ลิงก์สุ่มเสี่ยง</p>
+                                    <p><strong class="text-ink font-medium">Deliverables:</strong> UI/UX Wireframe, Machine Learning Model & Web Application Prototype</p>
+                                    <p><strong class="text-ink font-medium">Tech Stack:</strong> Python, HTML, CSS, JavaScript</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-3 border-t border-line/60 px-1 flex flex-wrap gap-1.5">
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Web Application</span>
+                            </div>
+                        </article>
+
+                        <!-- Project 3 -->
+                        <article class="tile proj flex flex-col justify-between h-full">
+                            <div>
+                                <div class="rounded-lg aspect-video bg-cover bg-center border border-line/50 shadow-sm overflow-hidden" 
+                                    style="background-image: url('../images/activities/My_work-Alertmalware Website.jpg');"></div>
+                                <h3 class="font-serif text-xl font-medium mt-3 px-1 text-ink">Alertmalware admin Website</h3>
+                                <p class="text-xs text-accent font-medium px-1 mt-0.5">โปรเจกต์จบรายวิชา เว็บไซต์สำหรับจัดการระบบเนื้อหาและเผยแพร่ข้อมูลเกี่ยวกับมัลแวร์</p>
+                                
+                                <div class="mt-3 px-1 space-y-1.5 text-xs text-muted leading-relaxed">
+                                    <p><strong class="text-ink font-medium">Role:</strong> ออกแบบส่วนติดต่อผู้ใช้ (UI/UX) สำหรับระบบจัดการ (Admin Panel) เพื่อให้ผู้ดูแลระบบสามารถจัดการเนื้อหาเกี่ยวกับมัลแวร์</p>
+                                    <p><strong class="text-ink font-medium">Deliverables:</strong> Scope Document & Frontend Website</p>
+                                    <p><strong class="text-ink font-medium">Programming Language:</strong> HTML, JS, CSS ,Python</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 pt-3 border-t border-line/60 px-1 flex flex-wrap gap-1.5">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX Design</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Web Application</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATES -->
+                <section class="page card" data-page="certificates">
+                    <h2 class="h2">Certificates</h2>
+                    <div class="rule"></div>
+                    <div class="grid sm:grid-cols-2 gap-5" id="cert">
+
+                        <!-- Cert 1 -->
+                        <div class="tile flex flex-col justify-between h-full">
+                            <div>
+                                <div class="rounded-lg aspect-[4/3] bg-contain bg-center bg-no-repeat bg-[#F7F5F0] border border-line/60 shadow-sm overflow-hidden p-2"
+                                    style="background-image: url('../images/Coursera\ Governance.jpg');"></div>
+                                <h3 class="font-serif text-lg font-medium text-ink mt-3">Governance, Risk, and Compliance 2026</h3>
+                                <p class="text-xs text-muted mt-1 leading-relaxed">ได้เรียนรู้หลักการสำคัญของการกำกับดูแล ความเสี่ยง และการปฏิบัติตามกฎระเบียบด้วยหลักสูตรที่ครอบคลุมนี้ ซึ่งออกแบบมาสำหรับผู้เชี่ยวชาญด้านไอทีและระบบรักษาความปลอดภัย</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 2 -->
+                        <div class="tile flex flex-col justify-between h-full">
+                            <div>
+                                <div class="rounded-lg aspect-[4/3] bg-contain bg-center bg-no-repeat bg-[#F7F5F0] border border-line/60 shadow-sm overflow-hidden p-2"
+                                    style="background-image: url('../images/coursera_page-0001.jpg');"></div>
+                                <h3 class="font-serif text-lg font-medium text-ink mt-3">Customer Service with Python: Build a Chatbot using ChatGPT 2025</h3>
+                                <p class="text-xs text-muted mt-1 leading-relaxed">ได้ความรู้ในการสร้างและปรับแต่งแชทบอทที่ขับเคลื่อนด้วย AI โดยใช้ Python และ ChatGPT API รวมถึงทักษะในการจัดการกระแสการสนทนาและตอบสนองต่อคำถามที่พบบ่อยในการบริการลูกค้า</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 3 -->
+                        <div class="tile flex flex-col justify-between h-full">
+                            <div>
+                                <div class="rounded-lg aspect-[4/3] bg-contain bg-center bg-no-repeat bg-[#F7F5F0] border border-line/60 shadow-sm overflow-hidden p-2"
+                                    style="background-image: url('../images/Senior_Top_Talent.jpg');"></div>
+                                <h3 class="font-serif text-lg font-medium text-ink mt-3">Thailand Cyber Top Talent 2025</h3>
+                                <p class="text-xs text-muted mt-1 leading-relaxed">การแข่งขันด้านความมั่นคงปลอดภัยไซเบอร์ของประเทศไทย จัดขึ้นโดยความร่วมมือระหว่างสำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ (สกมช.) และบริษัท หัวเว่ย เทคโนโลยี่ (ประเทศไทย) จำกัด</p>
+                            </div>
+                        </div>
+
+                        <!-- Cert 4 -->
+                        <div class="tile flex flex-col justify-between h-full">
+                            <div>
+                                <div class="rounded-lg aspect-[4/3] bg-contain bg-center bg-no-repeat bg-[#F7F5F0] border border-line/60 shadow-sm overflow-hidden p-2"
+                                    style="background-image: url('../images/\(SENIOR\)\ Women\ CERT\ NCSA\ Boot\ Camp\ 2024\ รุ่น\ 2_page-0001.jpg');"></div>
+                                <h3 class="font-serif text-lg font-medium text-ink mt-3">Women Thailand Cyber Top Talent 2024</h3>
+                                <p class="text-xs text-muted mt-1 leading-relaxed">การแข่งขันด้านความมั่นคงปลอดภัยไซเบอร์สำหรับผู้หญิง จัดโดย สำนักงานคณะกรรมการการรักษาความมั่นคงปลอดภัยไซเบอร์แห่งชาติ (สกมช.) ร่วมกับบริษัท หัวเว่ย เทคโนโลยี่ (ประเทศไทย) จำกัด</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CONTACT -->
+                <section class="page card" data-page="contact">
+                    <h2 class="h2">Contact</h2>
+                    <div class="rule"></div>
+                    <div class="grid md:grid-cols-[1fr_1.4fr] gap-8">
+                        <div>
+                            <p class="lead">สามารถติดต่อผ่านทางอีเมล โทรศัพท์ หรือช่องทางตรงด้านล่างได้เลย</p>
+                            <ul class="mt-6 space-y-3 text-sm list-none p-0">
+                                <li><span class="text-muted block">Name</span>สุทัตตา (มายด์)</li>
+                                <li><span class="text-muted block">Email</span>Sutatta2101@gmail.com
+                                </li>
+                                <li><span class="text-muted block">Phone</span>092-253-4287
+                                </li>
+                                <li><span class="text-muted block">ID Line</span>m659817m</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- External JS -->
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
